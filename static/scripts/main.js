@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  if ($.browser.mobile) {
+  if (isMobile.any) {
     // load css
     $('head').append('<link rel="stylesheet" type="text/css" href="/static/stylesheets/mobile.css">');
     
