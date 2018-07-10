@@ -90,17 +90,6 @@ nav > img {
   position: absolute;
 }
 
-#about div {
-  position: absolute;
-  left: 50%;
-  margin-left: -250px;
-  top: 470px;
-  color: #2845ae;
-  font-size: 21px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
 #kv-left {
   left: 0;
 }
@@ -114,11 +103,6 @@ nav > img {
   left: 50%;
   margin-left: -250px;
   top: 320px;
-}
-
-#about-form {
-  margin-top: 220px;
-  font-family: ProximaNova-Bold;
 }
 
 #about-form img {
@@ -157,8 +141,24 @@ nav > img {
   letter-spacing: 0px;
 }
 
-#about #about-desc {
+#about div {
   font-family: proxima_nova_altbold;
+  left: 50%;
+  margin-left: -250px;
+  position: absolute;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#about #about-form {
+  top: 650px;
+  color: #2845ae;
+}
+
+#about #about-desc {
+  top: 470px;
+  color: #2845ae;
 }
 
 #about #about-desc p {
