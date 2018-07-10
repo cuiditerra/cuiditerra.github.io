@@ -16,21 +16,22 @@
   <script src="/static/scripts/detect_mobile.js"></script>
   <script src="/static/scripts/main.js"></script>
   <script src="/static/scripts/carousel.js"></script>
+  <script src="/static/scripts/scrollbar.js"></script>
 </head>
 
 <body>
+  <img  src="/static/images/menu@2x.png" id="menu-hamberger" alt="hamberger">
+  <img  src="/static/images/menu_close@2x.png" id="menu-close" alt="close">
   <header>
     <nav>
       <img  src="/static/images/menu_logo.jpg" id="desktop-logo" alt="logo">
       <img  src="/static/images/logo@2x.png" id="mobile-logo" alt="mobile-logo">
-      <img  src="/static/images/menu@2x.png" id="menu-hamberger" alt="hamberger">
-      <img  src="/static/images/menu_close@2x.png" id="menu-close" alt="close">
       <ul id="nav-items">
         <li class="nav-item"><a class="nav-item-selected" href="#about">ABOUT</a></li>
         <li class="nav-item"><a href="#product">PRODUCTS</a></li>
-        <li class="nav-item"><a href="#investors-contact">INVESTORS</a></li>
         <li class="nav-item"><a href="#team">TEAM</a></li>
-        <li class="nav-item"><a href="#investors-contact">CONTACT</a></li>
+        <li class="nav-item"><a href="#investors">INVESTORS</a></li>
+        <li class="nav-item"><a href="#contact">CONTACT</a></li>
       </ul>
       <ul id="nav-social-btns">
         <li class="nav-social-btn">
@@ -53,7 +54,7 @@
       <span id="nav-co-info">© TERRAFORM LABS CORP.</span>
     </nav>
   </header>
-  <div id="about">
+  <section id="about" >
     <img id="kv-logo" src="/static/images/kv_logo.png" alt="">
     <img id="kv-left" src="/static/images/kv_left.png" alt="">
     <img id="kv-right" src="/static/images/kv_right.png" alt="">
@@ -69,8 +70,8 @@
         SUBMIT
       </button>
     </div>
-  </div>
-  <div id="product">
+  </section>
+  <section id="product">
     <img id="product-earth" src="/static/images/about_earth.png" alt="">
     <h2>Terra is</h2>
     <div id="product-desc">
@@ -82,15 +83,15 @@
       <img src="/static/images/about_icon_white_paper.jpg" alt="">WHITE PAPER
     </button>
     <img id="product-ground" src="/static/images/about_ground.png" alt="">
-  </div>
-  <div id="section-3">
-    <div id="section-3-1">
+  </section>
+  <section id="contents">
+    <div id="contents-1">
       <div>
         <h2>
           <p>We need a</p>
           <p>decentralized stablecoin</p>
         </h2>
-        <div class="section-3-desc">
+        <div class="contents-desc">
           Cryptocurrencies have the potential to transform the financial landscape. Yet, price volatility remains a major barrier for mass adoption. Our answer is Terra, a decentralized stablecoin to become a new global currency.
         </div>
       </div>
@@ -98,13 +99,13 @@
         <img src="/static/images/about_contents_img_01.jpg" alt="">
       </div>
     </div>
-    <div id="section-3-2">
+    <div id="contents-2">
       <div>
         <h2>
           <p>With a</p>
           <p>clear adoption roadmap </p>
         </h2>
-        <div class="section-3-desc">
+        <div class="contents-desc">
           A currency that can't be used at checkout is useless. Terra is launching with the largest alliance of commerce platforms in the space, with $15 billion in annual transaction volume and 30 million customers. Terra is poised to become a medium of exchange at massive scale.
         </div>
       </div>
@@ -112,13 +113,13 @@
         <img src="/static/images/about_contents_img_02.jpg" alt="">
       </div>
     </div>
-    <div id="section-3-3">
+    <div id="contents-3">
       <div>
         <h2>
           <p>To set the stage</p>
           <p>for financial disruption</p>
         </h2>
-        <div class="section-3-desc">
+        <div class="contents-desc">
           For too long, financial institutions have neglected innovation at the expense of their customers. Beyond being a currency, Terra will become an open platform for disruptive financial dApps powered by Terra's stability.
         </div>
       </div>
@@ -126,50 +127,50 @@
         <img src="/static/images/about_contents_img_03.jpg" alt="">
       </div>
     </div>
-  </div>
-  <div id="section-4">
-    <div id="section-4-upper">
+  </section>
+  <section id="protocol">
+    <div id="protocol-upper">
       <h2>Introducing Terra Protocol</h2>
-      <div class="section-4-desc">
+      <div class="protocol-desc">
         Terra is a protocol of money that ensures price-stability by algorithmically expanding and contracting supply. Terra's Stability Reserve makes a decentralized guarantee of solvency, protecting it from the speculative and regulatory risks that other currencies are exposed to.
       </div>
       <img id="desktop-terra-protocol" src="/static/images/about_terra_protocol.png" alt="">
       <img id="mobile-terra-protocol" src="/static/images/img_protocol@2x.png" alt="">
     </div>
     <div id="triangle-bottomleft"></div>
-    <div id="section-4-downer">
+    <div id="protocol-downer">
       <h3>STABILIZED BY LUNA</h3>
-      <div class="section-4-desc">
+      <div class="protocol-desc">
         Terra is backed by Luna, a decentralized asset that derives its value from transaction fees collected on the Terra network. Much like the moon stabilizes the earth’s rotation, Luna is Terra's eternal guardian of stability.
       </div>
     </div>
-  </div>
-  <div id="section-5">
-    <img id="section-5-logo" src="/static/images/product_logo.png" alt="">
-    <div id="section-5-google">
+  </section>
+  <section id="apps">
+    <img id="apps-logo" src="/static/images/product_logo.png" alt="">
+    <div id="apps-google">
       <img src="/static/images/product_google_play.png" alt="">
       <p>COMING SOON</p>
     </div>
-    <div id="section-5-apple">
+    <div id="apps-apple">
       <img src="/static/images/product_apple_store.jpg" alt="">
       <p>COMING SOON</p>
     </div>
-    <div id="section-5-overlay"></div>
-  </div>
-  <div id="section-6">
-    <div id="section-6-container">
+    <div id="apps-overlay"></div>
+  </section>
+  <section id="alliance">
+    <div id="alliance-container">
       <h2>Checkout with TerraPay
       </h2>
-      <div id="section-6-desc">
+      <div id="alliance-desc">
         Paying for groceries with cryptocurrency will soon become a reality. Look forward to lower transaction fees, attractive offers and a seamless payment experience.
       </div>
       <h3>TERRA ALLIANCE</h3>
-      <img id="section-6-desktop-image" src="/static/images/product_alliance.jpg" alt="">
-      <img id="section-6-mobile-image" src="/static/images/mobile-product_alliance.png" alt="">
+      <img id="alliance-desktop-image" src="/static/images/product_alliance.jpg" alt="">
+      <img id="alliance-mobile-image" src="/static/images/mobile-product_alliance.png" alt="">
     </div>
 
-  </div>
-  <div id="team">
+  </section>
+  <section id="team">
     <h2>Meet our team
     </h2>
     <div id="pagination">
@@ -235,12 +236,14 @@
         </div>
       </li>
     </ul>
-  </div>
-  <div id="investors-contact">
+  </section>
+  <section id="investors">
     <h1>
       Backed by
     </h1>
     <img src="/static/images/Investors_logo.jpg" alt="">
+  </section>
+ <section id="contact">
     <h1>
       Contact Us
     </h1>
@@ -249,7 +252,7 @@
       <span>please contact us at </span>
     </div>
     <p>general@terra.money</p>
-  </div>
+  </section>
   <footer>
     <hr>
     <span>© Terraform Labs Corp. All rights reserved.</span>

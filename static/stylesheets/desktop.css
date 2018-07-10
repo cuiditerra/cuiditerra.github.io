@@ -19,11 +19,10 @@ header {
 }
 
 nav {
-  margin: 0 auto;
+  width: 100%;
   height: 66px;
   background: #141414;
   padding: auto 36px;
-  width: 1600px
 }
 
 nav > img {
@@ -67,14 +66,21 @@ nav > img {
   margin-right: 20px;
 }
 
+.nav-social-btn span {
+  display: none;
+}
 
+#nav-co-info {
+  display: none;
+}
 
 #about, #product {
   height: 100vh;
   min-height: 900px;
+  max-height: 100vh;
 }
 
-#about, #product, #section-3, #section-4, #section-5, #section-6, #team, #investors-contact, footer {
+#about, #product, #contents, #protocol, #apps, #alliance, #team, #investors-contact, footer {
   min-width: 1600px;
   width: 100vw;
   position: relative;
@@ -217,17 +223,17 @@ nav > img {
 }
 
 
-#section-3 {
+#contents {
   padding-top: 200px;
 }
 
-#section-3 .image {
+#contents .image {
   padding: 0 15px;
   box-sizing: border-box
 }
 
 
-#section-3 h2 {
+#contents h2 {
   font-size: 40px;
   font-weight: normal;
   font-stretch: normal;
@@ -237,23 +243,27 @@ nav > img {
   font-family: proxima_nova_altbold;
 }
 
-#section-3-1, #section-3-2, #section-3-3 {
+#contents-1, #contents-2, #contents-3 {
   height: 580px;
   width: 910px;
   margin: auto;
 }
 
-#section-3-1 > div, #section-3-2 > div, #section-3-3 > div {
+#contents-1 > div, #contents-2 > div, #contents-3 > div {
   float: left;
   width: 450px;
   display: inline-block;
 }
 
-#section-3-2 > div {
+#contents-2 > div {
   float: right
 }
 
-#section-3 .section-3-desc {
+#contents-2 img {
+ width: 98%; 
+}
+
+#contents .contents-desc {
   width: 450px;
   font-size: 22px;
   line-height: 34px;
@@ -262,7 +272,11 @@ nav > img {
   display: inline-block
 }
 
-#section-4 #section-4-upper, #section-4 #section-4-downer {
+#protocol {
+  margin-bottom: 140px;
+}
+
+#protocol #protocol-upper, #protocol #protocol-downer {
   background-color: #f2f2f2;
   width: 1200px;
   height: 680px;
@@ -270,11 +284,11 @@ nav > img {
   position: relative;
 }
 
-#section-4 #section-4-downer {
+#protocol #protocol-downer {
   background-color: #383838;
 }
 
-#section-4 #section-4-upper img {
+#protocol #protocol-upper img {
   position: absolute;
   bottom: 0px;
   margin-bottom: -215px;
@@ -283,7 +297,7 @@ nav > img {
   z-index: 1001;
 }
 
-#section-4 h2 {
+#protocol h2 {
   font-size: 68px;
   letter-spacing: -1px;
   color: #2845ae;
@@ -293,7 +307,7 @@ nav > img {
   font-family: proxima_nova_altbold;
 }
 
-#section-4 .section-4-desc {
+#protocol .protocol-desc {
   position: absolute;
   font-size: 34px;
   line-height: 40px;
@@ -304,11 +318,15 @@ nav > img {
   width: 860px;
 }
 
-#section-4-downer .section-4-desc {
+#protocol-downer .protocol-desc {
   color: #f2f2f2;
 }
 
-#section-4-downer h3 {
+#protocol-upper #mobile-terra-protocol {
+  display: none;
+}
+
+#protocol-downer h3 {
   position: absolute;
   font-size: 18px;
   letter-spacing: 0px;
@@ -318,7 +336,7 @@ nav > img {
   font-family: proxima_nova_altbold;
 }
 
-#section-4 #triangle-bottomleft {
+#protocol #triangle-bottomleft {
   width: 0;
   height: 0;
   border-top: 170px solid #f2f2f2;
@@ -326,32 +344,32 @@ nav > img {
   margin: auto;
 }
 
-#section-5 {
+#apps {
   margin: auto;
   width: 1600px;
   height: 720px;
   background: url(/static/images/product_img.png)
 }
 
-#section-5 #section-5-logo {
+#apps #apps-logo {
   position: absolute;
   left: 980px;
   top: 284px;
 }
 
-#section-5 #section-5-google {
+#apps #apps-google {
   position: absolute;
   left: 970px;
   top: 370px;
 }
 
-#section-5 #section-5-apple {
+#apps #apps-apple {
   position: absolute;
   left: 1118px;
   top: 370px;
 }
 
-#section-5 p {
+#apps p {
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
@@ -361,13 +379,23 @@ nav > img {
   padding-top: 10px;
 }
 
-#section-6 {
+#apps-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+  width: 1200px;
+  height: 50px;
+  z-index: 1001;
+  background: #ffffff
+}
+
+#alliance {
   width: 1600px;
   height: 600px;
   margin: auto;
 }
 
-#section-6 #section-6-container {
+#alliance #alliance-container {
   position: absolute;
   width: 1200px;
   left: 200px;
@@ -376,7 +404,7 @@ nav > img {
   z-index: 100;
 }
 
-#section-6 h2 {
+#alliance h2 {
   font-size: 72px;
   font-weight: normal;
   font-stretch: normal;
@@ -389,7 +417,7 @@ nav > img {
   font-family: proxima_nova_altbold;
 }
 
-#section-6 #section-6-desc {
+#alliance #alliance-desc {
   font-size: 34px;
   font-weight: normal;
   font-stretch: normal;
@@ -401,7 +429,7 @@ nav > img {
   position: absolute;
 }
 
-#section-6 h3 {
+#alliance h3 {
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -413,7 +441,7 @@ nav > img {
   font-family: proxima_nova_altbold;
 }
 
-#section-6 img {
+#alliance img {
   left: 140px;
   top: 460px;
   position: absolute;
@@ -553,13 +581,18 @@ nav > img {
   transition: all .9s ease-in-out;
 }
 
-#investors-contact {
+#investors, #contact {
   margin: auto;
   width: 900px;
-  height: 960px;
+  height: 480px;
+  position: relative;
 }
 
-#investors-contact h1 {
+#contact {
+  height: 400px;  
+}
+
+#investors h1, #contact h1 {
   font-size: 72px;
   font-weight: normal;
   font-stretch: normal;
@@ -567,31 +600,24 @@ nav > img {
   letter-spacing: -1px;
   color: #2845ae;
   position: absolute;
-  left: 340px;
   font-family: proxima_nova_altbold;
 }
 
-#investors-contact h1:nth-child(1) {
+#investors h1 {
   top: 140px;
 }
 
-#investors-contact h1:nth-child(3) {
-  top: 590px;
-}
-
-#investors-contact > img {
+#investors > img, #contact > img {
   position: absolute;
-  left: 340px;
   top: 260px;
 }
 
-#investors-contact > div {
+#contact > div {
   position: absolute;
-  left: 340px;
-  top: 710px;
   line-height: 45px;
+  top: 80px
 }
-#investors-contact > div span {
+#contact > div span {
   display: block;
   font-size: 34px;
   font-weight: normal;
@@ -600,7 +626,7 @@ nav > img {
   color: #909090;
 }
 
-#investors-contact > p {
+#contact > p {
   font-size: 29px;
   font-weight: normal;
   font-stretch: normal;
@@ -608,33 +634,14 @@ nav > img {
   letter-spacing: 0px;
   color: #5493f0;
   position: absolute;
-  left: 340px;
-  top: 850px;
+  left: 0px;
+  top: 190px
 }
 
 footer {
   min-width: 1300px;
   width: 1300px;
   margin: auto;
-}
-
-
-#section-3-2 img {
- width: 98%; 
-}
-
-#section-4 {
-  margin-bottom: 140px;
-}
-
-#section-5-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 200px;
-  width: 1200px;
-  height: 50px;
-  z-index: 1001;
-  background: #ffffff
 }
 
 footer hr {

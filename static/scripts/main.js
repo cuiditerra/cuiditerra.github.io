@@ -22,6 +22,7 @@ $(document).ready(function () {
   } else {
     // load css
     $('head').append('<link rel="stylesheet" type="text/css" href="/static/stylesheets/desktop.css">');
+    
     // Make nav fixed or hide 
     var scrollPos = 0;
 
@@ -38,17 +39,4 @@ $(document).ready(function () {
       scrollPos = curScrollPos;
     });
   }
-
-
-
-
-  // Set nav item selected
-  $('.nav-item').on("click", function (event) {
-    $('.nav-item a').each(function (_, element) {
-      $(element).removeClass("nav-item-selected");
-      if (event.target === element) {
-        $(element).addClass("nav-item-selected");
-      }
-    });
-  });
 });

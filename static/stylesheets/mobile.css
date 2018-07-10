@@ -249,13 +249,13 @@ header .nav-item:hover {
   padding-right: 10px;
 }
 
-#section-3 {
+#contents {
   width: 100vw;
   overflow-x: hidden;
   padding-top: 54px;
 }
 
-#section-3 h2 {
+#contents h2 {
   font-family: proxima_nova_altbold;
   font-size: 27px;
   font-weight: normal;
@@ -266,7 +266,7 @@ header .nav-item:hover {
   margin-left: 30px;
 }
 
-#section-3 .image img {
+#contents .image img {
   position: absolute;
   width: 70%;
   bottom: 0;
@@ -274,15 +274,15 @@ header .nav-item:hover {
   margin-right: -40px;
 }
 
-#section-3-1,
-#section-3-2,
-#section-3-3 {
+#contents-1,
+#contents-2,
+#contents-3 {
   height: 550px;
   position: relative;
   margin-bottom: 30px;
 }
 
-#section-3 .section-3-desc {
+#contents .contents-desc {
   font-size: 19px;
   font-weight: normal;
   font-stretch: normal;
@@ -294,32 +294,32 @@ header .nav-item:hover {
   margin-right: 30px;
 }
 
-#section-4 {
+#protocol {
   background-color: #f2f2f2;
   width: 100vw;
   height: 980px;
   position: relative;
 }
 
-#section-4 #section-4-upper,
-#section-4 #section-4-downer {
+#protocol #protocol-upper,
+#protocol #protocol-downer {
   margin: auto;
   position: relative;
   height: 480px;
 }
 
-#section-4 #section-4-downer {
+#protocol #protocol-downer {
   background-color: #383838;
 }
 
-#section-4 #section-4-upper img {
+#protocol #protocol-upper img {
   position: absolute;
   top: 480px;
   width: 100%;
   z-index: 1000;
 }
 
-#section-4 h2 {
+#protocol h2 {
   position: absolute;
   left: 30px;
   right: 30px;
@@ -334,12 +334,12 @@ header .nav-item:hover {
 }
 
 @media (min-width: 300px) {
-  #section-4 h2 {
+  #protocol h2 {
     font-size: 30px;
   }
 }
 
-#section-4 .section-4-desc {
+#protocol .protocol-desc {
   position: absolute;
   left: 30px;
   right: 30px;
@@ -352,12 +352,12 @@ header .nav-item:hover {
   color: #666666;
 }
 
-#section-4-downer .section-4-desc {
+#protocol-downer .protocol-desc {
   top: 240px;
   color: #f2f2f2;
 }
 
-#section-4-downer h3 {
+#protocol-downer h3 {
   font-size: 22px;
   font-weight: normal;
   font-stretch: normal;
@@ -369,15 +369,15 @@ header .nav-item:hover {
   font-family: proxima_nova_altbold;
 }
 
-#section-4 #triangle-bottomleft {
+#protocol #triangle-bottomleft {
   display: none;
 }
 
-#section-4 #desktop-terra-protocol {
+#protocol #desktop-terra-protocol {
   display: none;
 }
 
-#section-5 {
+#apps {
   width: 100vw;
   height: 470px;
   background: url(/static/images/mobile-product-bg@2x.png);
@@ -385,7 +385,7 @@ header .nav-item:hover {
   position: relative;
 }
 
-#section-5 #section-5-logo {
+#apps #apps-logo {
   position: absolute;
   left: 30px;
   top: 360px;
@@ -393,17 +393,17 @@ header .nav-item:hover {
   height: 23px;
 }
 
-#section-5 #section-5-google {
+#apps #apps-google {
   position: absolute;
   left: 30px;
   top: 370px;
 }
 
-#section-5 #section-5-google img {
+#apps #apps-google img {
   display: none;
 }
 
-#section-5 #section-5-google p {
+#apps #apps-google p {
   text-align: center;
   padding-top: 20px;
   font-family: ProximaNova-Bold;
@@ -414,29 +414,29 @@ header .nav-item:hover {
   color: #ffffff;
 }
 
-#section-5 #section-5-apple {
+#apps #apps-apple {
   display: none;
 }
 
-#section-5-overlay {
+#apps-overlay {
   display: none;
 }
 
-#section-6 {
+#alliance {
   width: 100vw;
   height: 500px;
   background: #ffffff;
   margin-top: -50px;
 }
 
-#section-6 #section-6-container {
+#alliance #alliance-container {
   position: absolute;
   width: 100%;
   margin-top: -50px;
   z-index: 100;
 }
 
-#section-6 h2 {
+#alliance h2 {
   font-size: 41px;
   font-weight: normal;
   font-stretch: normal;
@@ -450,7 +450,7 @@ header .nav-item:hover {
   font-family: proxima_nova_altbold;
 }
 
-#section-6 #section-6-desc {
+#alliance #alliance-desc {
   font-family: ProximaNova-Regular;
   font-size: 19px;
   font-weight: normal;
@@ -464,7 +464,7 @@ header .nav-item:hover {
   position: absolute;
 }
 
-#section-6 h3 {
+#alliance h3 {
   font-size: 22px;
   font-weight: normal;
   font-stretch: normal;
@@ -476,10 +476,10 @@ header .nav-item:hover {
   font-family: proxima_nova_altbold;
 }
 
-#section-6 #section-6-desktop-image {
+#alliance #alliance-desktop-image {
   display: none;
 }
-#section-6 #section-6-mobile-image {
+#alliance #alliance-mobile-image {
   left: 30px;
   top: 460px;
   position: absolute;
