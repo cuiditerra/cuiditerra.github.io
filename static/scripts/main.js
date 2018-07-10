@@ -33,4 +33,5 @@ $(document).ready(function () {
       scrollPos = curScrollPos;
     });
   }
+  $('body').css("display","block");
 });
