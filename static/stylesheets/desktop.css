@@ -550,6 +550,24 @@ nav > img {
  right: 420px;
 }
 
+#team #photo-border {
+  position: absolute;
+  border: solid 12px #ffffff;
+  width: 350px;
+  height: 410px;
+  right: 330px;
+  top: 253px;
+}
+
+#pagination span {
+  font-family: proxima_nova_altbold;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  color: #2845ae;
+}
+
 .main-pos .team-left,
 .main-pos .team-right {
   opacity: 1;
@@ -607,6 +625,10 @@ nav > img {
   top: 140px;
 }
 
+#investors #mobile-investors {
+  display: none;
+}
+
 #investors > img, #contact > img {
   position: absolute;
   top: 260px;
@@ -639,11 +661,30 @@ nav > img {
 }
 
 footer {
-  min-width: 1300px;
-  width: 1300px;
+  min-width: 920px;
+  width: 920px;
   margin: auto;
+  margin-bottom: 160px;
 }
 
 footer hr {
   background-color: #d1d1d1;
+}
+
+footer span {
+  font-family: proxima_nova_altbold;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #909090;
+}
+
+footer div {
+  display: inline-block;
+  float: right;
+}
+
+footer div img {
+  margin-left: 20px;
 }

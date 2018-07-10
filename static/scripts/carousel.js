@@ -6,7 +6,9 @@ $(document).ready(function () {
   var itemCount = $('#persons li.person').length;
   var leftpos = itemCount;
   var resetCount = itemCount;
-
+  
+  $('#pagination span').text(startItem + '/' + itemCount);
+  
   //unused: gather text inside items class
   $('li.person').each(function (index) {
     items[index] = $(this).text();
@@ -76,14 +78,14 @@ $(document).ready(function () {
 
   //next button click function
   $('#next').click(function () {
-    console.log('clockwise');
     swap('clockwise');
+    $('#pagination span').text(startItem + '/' + itemCount);
   });
 
   //prev button click function
   $('#prev').click(function () {
-    console.log('counter-clockwise');
     swap('counter-clockwise');
+    $('#pagination span').text(startItem + '/' + itemCount);
   });
 
   //if any visible items are clicked
