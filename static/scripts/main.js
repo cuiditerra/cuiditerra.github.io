@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  if ($.browser.mobile) {
+  if (isMobile.any) {
     $("#menu-close").hide();
     $("header").hide();
     
@@ -33,5 +33,5 @@ $(document).ready(function () {
       scrollPos = curScrollPos;
     });
   }
-  $('body').css("display","block");
+  $('body').css("display", "block");
 });
