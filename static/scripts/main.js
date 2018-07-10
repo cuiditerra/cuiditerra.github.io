@@ -39,5 +39,13 @@ $(document).ready(function () {
       scrollPos = curScrollPos;
     });
   }
+  
   $('body').css("display", "block");
+  
+  // scroll body to center
+  var bodyWidth = $("html, body").width();
+  
+  if (bodyWidth < 1600) { 
+    $("html, body").scrollLeft((1600 - bodyWidth) / 2) 
+  }
 });
