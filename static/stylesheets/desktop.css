@@ -548,6 +548,7 @@ nav > img {
  position: absolute;
  top: 710px;
  right: 420px;
+ z-index: 1000;
 }
 
 #team #photo-border {
