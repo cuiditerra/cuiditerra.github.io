@@ -2,7 +2,7 @@ $(document).ready(function () {
   var sections = $('section'),
     nav = $('nav'),
     header_height = isMobile.any ? 0 : 66;
-
+  
   $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
 
@@ -24,14 +24,17 @@ $(document).ready(function () {
   nav.find('#nav-items a').on('click', function () {
     var $el = $(this),
       id = $el.attr('href');
+    
     $('html, body').animate({
-      scrollTop: $(id).offset().top - header_height
+      scrollTop: $(id).offset().top
     }, 500);
     
-    $("header").animate({ width: "toggle" }, function () {
-      $("#menu-close").hide();
-      $("#menu-hamberger").show();
-    });
+    if (isMobile.any) {
+      $("header").animate({ width: "toggle" }, function () {
+        $("#menu-close").hide();
+        $("#menu-hamberger").show();
+      });
+    }
 
     return false;
   });
