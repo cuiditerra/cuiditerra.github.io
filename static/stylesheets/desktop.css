@@ -551,15 +551,6 @@ nav > img {
  z-index: 1000;
 }
 
-#team #photo-border {
-  position: absolute;
-  border: solid 12px #ffffff;
-  width: 350px;
-  height: 410px;
-  right: 330px;
-  top: 253px;
-}
-
 #pagination span {
   font-family: proxima_nova_altbold;
   font-size: 15px;
