@@ -1,8 +1,5 @@
 $(document).ready(function () {
   if ($.browser.mobile) {
-    // load css
-    $('head').append('<link rel="stylesheet" type="text/css" href="/static/stylesheets/mobile.css">');
-    
     $("#menu-close").hide();
     $("header").hide();
     
@@ -20,9 +17,6 @@ $(document).ready(function () {
       });
     });
   } else {
-    // load css
-    $('head').append('<link rel="stylesheet" type="text/css" href="/static/stylesheets/desktop.css">');
-    
     // Make nav fixed or hide 
     var scrollPos = 0;
 
