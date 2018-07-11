@@ -124,9 +124,13 @@
     font-stretch: normal;
     line-height: 35px;
     letter-spacing: 0px;
-    color: #a3a3a3;
     padding-left: 24px;
     box-sizing: border-box;
+  }
+  
+  #about-form input::placeholder {
+    font-family: Proxima Nova;
+    color: #a3a3a3;
   }
 
   #about-form button {
@@ -662,10 +666,16 @@
   }
 
   footer {
-    min-width: 920px;
-    width: 920px;
+    position: relative;
     margin: auto;
     margin-bottom: 160px;
+  }
+  
+  #footer-container {
+    position: relative;
+    margin: auto;
+    min-width: 920px;
+    width: 920px;
   }
 
   footer hr {
@@ -681,7 +691,7 @@
     color: #909090;
   }
 
-  footer div {
+  footer #footer-container div {
     display: inline-block;
     float: right;
   }
