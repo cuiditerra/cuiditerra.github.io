@@ -28,10 +28,10 @@ $(document).ready(function () {
 
       if (curScrollPos > scrollPos) {
         //Scrolling Down
-        $("header").css("display", "none");
+        $("header").fadeOut('slow');
       } else {
         //Scrolling Up
-        $("header").css("display", "block");
+        $("header").fadeIn('slow');
       }
       scrollPos = curScrollPos;
     });
