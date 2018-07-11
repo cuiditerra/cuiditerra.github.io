@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var sections = $('section'),
     nav = $('nav'),
-    header_height = isMobile.any ? 0 : 66;
+    header_height = isMobile ? 0 : 66;
   
   $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
@@ -29,7 +29,7 @@ $(document).ready(function () {
       scrollTop: $(id).offset().top
     }, 500);
     
-    if (isMobile.any) {
+    if (isMobile) {
       $("header").animate({ width: "toggle" }, function () {
         $("#menu-close").hide();
         $("#menu-hamberger").show();
