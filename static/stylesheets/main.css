@@ -648,7 +648,7 @@
     color: #909090;
   }
 
-  #contact #contact-container > p {
+  #contact #contact-container > a {
     font-size: 29px;
     font-weight: normal;
     font-stretch: normal;
@@ -657,7 +657,8 @@
     color: #5493f0;
     position: absolute;
     left: 0px;
-    top: 190px
+    top: 190px;
+    text-decoration: underline;
   }
 
   footer {
@@ -1331,19 +1332,17 @@
     transition: all .9s ease-in-out;
   }
 
-  #investors {
+  #investors, #contact {
+    position: relative;
+  }
+  
+  #investors-container, #contact-container {
     width: 100vw;
     height: 195px;
     position: relative;
   }
 
-  #contact {
-    width: 100vw;
-    height: 195px;
-    position: relative;
-  }
-
-  #investors h1, #contact h1 {
+  #investors #investors-container h1, #contact #contact-container h1 {
     font-family: proxima_nova_altbold;
     font-size: 41px;
     font-weight: normal;
@@ -1356,20 +1355,20 @@
     top: 60px;
   }
 
-  #investors > img {
+  #investors #investors-container > img {
     position: absolute;
     width: 200px;
     left: 30px;
     top: 120px;
   }
 
-  #contact > div {
+  #contact #contact-container > div {
     position: absolute;
     left: 30px;
     right: 30px;
     top: 120px;
   }
-  #contact > div span {
+  #contact #contact-container > div span {
     font-size: 19px;
     font-weight: normal;
     font-stretch: normal;
@@ -1378,7 +1377,7 @@
     line-height: 29px
   }
 
-  #contact > p {
+  #contact #contact-container > a {
     font-family: proxima_nova_altbold;
     font-size: 19px;
     font-weight: normal;
