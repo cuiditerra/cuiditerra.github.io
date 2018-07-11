@@ -594,9 +594,21 @@
 
   #investors, #contact {
     margin: auto;
-    width: 900px;
+    width: 1600px;
     height: 480px;
     position: relative;
+  }
+  
+  #investors #investors-container,
+  #contact #contact-container {
+    width: 900px;
+    margin: auto;
+    position: relative;
+  }
+  
+  #investors #investors-container > img, #contact #contact-container > img {
+    position: absolute;
+    top: 260px;
   }
 
   #contact {
@@ -622,17 +634,12 @@
     display: none;
   }
 
-  #investors > img, #contact > img {
-    position: absolute;
-    top: 260px;
-  }
-
-  #contact > div {
+  #contact #contact-container >  div {
     position: absolute;
     line-height: 45px;
     top: 80px
   }
-  #contact > div span {
+  #contact #contact-container > div span {
     display: block;
     font-size: 34px;
     font-weight: normal;
@@ -641,7 +648,7 @@
     color: #909090;
   }
 
-  #contact > p {
+  #contact #contact-container > p {
     font-size: 29px;
     font-weight: normal;
     font-stretch: normal;
