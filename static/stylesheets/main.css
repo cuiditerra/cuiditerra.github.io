@@ -819,6 +819,7 @@
     overflow: hidden;
     background-image: url(/static/images/mobile_01_KV.png);
     background-size: cover;
+    position: relative;
   }
 
   #about #kv-left {
@@ -836,7 +837,7 @@
     margin-left: -105px;
     top: 50%;
     margin-top: -30px;
-    position: absolute
+    position: absolute;
   }
 
   #about #about-desc {
