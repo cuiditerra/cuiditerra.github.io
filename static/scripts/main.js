@@ -6,7 +6,7 @@ $(document).ready(function () {
     $("header").hide();
     
     $("#menu-hamberger").click(function () {
-      $("header").animate({ width: "toggle" }, function () {
+      $("header").animate({ width: "toggle", right: "0px"}, function () {
         $("#menu-hamberger").hide();
         $("#menu-close").show();
       });
