@@ -159,7 +159,7 @@
 
   #about #about-form {
     bottom: 0px;
-		margin-bottom: 80px;
+    margin-bottom: 80px;
     color: #2845ae;
   }
 
@@ -817,7 +817,6 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    position: relative;
     background-image: url(/static/images/mobile_01_KV.png);
     background-size: cover;
   }
