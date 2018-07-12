@@ -259,6 +259,10 @@
     width: 450px;
     display: inline-block;
   }
+  
+  #contents-1 #mobile-icon-1 {
+    display: none;
+  }
 
   #contents-2 > div {
     float: right
@@ -453,10 +457,14 @@
   }
 
   #team {
-    margin: auto;
-    width: 1600px;
-    height: 860px;
     background-color: #f2f2f2;
+  }
+  
+  #team #team-container {
+    height: 860px;
+    width: 1600px;
+    margin: auto;
+    position: relative;
   }
 
   #team h2 {
@@ -970,6 +978,7 @@
     margin-right: -40px;
     right: 0;
     float: right;
+    margin-top: 10px;
   }
 
   #contents-1,
@@ -978,6 +987,10 @@
     height: 550px;
     position: relative;
     margin-bottom: 30px;
+  }
+  
+  #contents-1 #desktop-icon-1 {
+    display: none;
   }
 
   #contents .contents-desc {
