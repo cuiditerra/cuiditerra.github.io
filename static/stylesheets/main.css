@@ -611,6 +611,10 @@
     position: relative;
   }
   
+  #investors {
+    display: none;
+  }
+  
   #investors #investors-container,
   #contact #contact-container {
     width: 900px;
@@ -624,7 +628,8 @@
   }
 
   #contact {
-    height: 400px;  
+    height: 400px;
+    margin-top: 140px;
   }
 
   #investors h1, #contact h1 {
@@ -865,7 +870,7 @@
     background-color: #ffffff;
     border-radius: 3px 0px 0px 3px;
     border: solid 1px #e9ebf1;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     line-height: 35px;
@@ -987,6 +992,10 @@
     height: 550px;
     position: relative;
     margin-bottom: 30px;
+  }
+  
+  #contents #contents-1 img {
+    width: 60%;
   }
   
   #contents-1 #desktop-icon-1 {
@@ -1359,6 +1368,10 @@
     position: relative;
   }
   
+  #investors {
+    display: none;
+  }
+  
   #investors-container, #contact-container {
     width: 100vw;
     height: 195px;
@@ -1411,6 +1424,7 @@
     left: 30px;
     top: 200px;
     padding-bottom: 60px;
+    text-decoration: underline;
   }
 
   #investors #desktop-investors {
