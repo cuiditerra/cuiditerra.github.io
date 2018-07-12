@@ -157,7 +157,8 @@
   }
 
   #about #about-form {
-    top: 650px;
+    bottom: 0px;
+		margin-bottom: 80px;
     color: #2845ae;
   }
 
