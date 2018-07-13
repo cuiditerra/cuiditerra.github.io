@@ -819,7 +819,7 @@
 
   #about {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 40px);
     overflow: hidden;
     background-image: url(/static/images/mobile_01_KV.png);
     background-size: cover;
@@ -860,7 +860,7 @@
   }
 
   #about #about-form {
-    bottom: 100px;
+    bottom: 80px;
     position: absolute;
     width: 290px;
     left: 50%;
