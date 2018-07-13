@@ -28,12 +28,12 @@ $(document).ready(function () {
     var scrollPos = 0;
 
     $(window).scroll(function () {
-      var curScrollPos = $(this).scrollTop();
 
-      if (curScrollPos > scrollPos) {
+      var curScrollPos = $(this).scrollTop();
+      if (curScrollPos - scrollPos > 10) {
         //Scrolling Down
         $("header").fadeOut('slow');
-      } else {
+      } else if (curScrollPos - scrollPos < -10) {
         //Scrolling Up
         $("header").fadeIn('slow');
       }
