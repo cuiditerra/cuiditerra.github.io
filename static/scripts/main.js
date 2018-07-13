@@ -52,9 +52,9 @@ $(document).ready(function () {
 
   // set about-form for mobile
   if (isMobile) {
+    $("#about").height($( window ).height());
     var aboutFormFromTop = $("#about").height() - 100;
     $("#about-form").css("margin-top", aboutFormFromTop + "px");
-    $("about").height($( window ).height());
   }
 
 });
