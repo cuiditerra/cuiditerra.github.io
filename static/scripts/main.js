@@ -1,7 +1,6 @@
 $(document).ready(function () {
   isMobile = $('html, body').width() < 600 ? true : false;
   if (isMobile) {
-    
     $("#menu-close").hide();
     $("header").hide();
     
@@ -44,5 +43,11 @@ $(document).ready(function () {
   
   if (bodyWidth < 1600) { 
     $("html, body").scrollLeft((1600 - bodyWidth) / 2) 
+  }
+  
+  // set about-form for mobile
+  if (isMobile) {
+    var aboutFormFromTop = $("#about").height() - 100;
+    $("#about-form").css("margin-top", aboutFormFromTop+"px");
   }
 });

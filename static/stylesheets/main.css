@@ -856,10 +856,9 @@
   }
 
   #about #about-form {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    margin-left: -145px;
+    margin: 0px auto;
+    position: relative;
+    width: 290px;
     font-family: proxima_nova_altbold;
   }
 
