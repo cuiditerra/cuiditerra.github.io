@@ -49,4 +49,21 @@ $(document).ready(function () {
   if (bodyWidth < 1600) {
     $("html, body").scrollLeft((1600 - bodyWidth) / 2)
   }
+  
+  // 
+  
+  function calcHeight() {
+    if ($('html, body').width() <= 1080) {
+      $('#about, #product').height(607.5);
+    } else {
+      $('#about, #product').height($('html, body').width() / 1.77777 )
+    }
+  };
+  
+  calcHeight();
+  if (!isMobile) {
+    $( window).resize(function() {
+      calcHeight();
+    });
+  }
 });
