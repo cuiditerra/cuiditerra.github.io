@@ -52,7 +52,7 @@ $(document).ready(function () {
 
   // set about Form Top
   if (isMobile) {
-    var aboutFormFromTop = $("#about").height() - 100;
+    var aboutFormFromTop = $("#about").height() - 120;
     $("#about-form").css("margin-top", aboutFormFromTop+"px");
   }
 });
