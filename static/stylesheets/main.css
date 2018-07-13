@@ -860,11 +860,12 @@
   }
 
   #about #about-form {
-    margin: 0px auto;
-    position: relative;
+    bottom: 100px;
+    position: absolute;
     width: 290px;
+    left: 50%;
+    margin-left: -145px;
     font-family: proxima_nova_altbold;
-    margin-top: 550px;
   }
 
   #about #about-form img {
