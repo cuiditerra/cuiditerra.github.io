@@ -49,11 +49,4 @@ $(document).ready(function () {
   if (bodyWidth < 1600) {
     $("html, body").scrollLeft((1600 - bodyWidth) / 2)
   }
-
-  // set about-form for mobile
-  if (isMobile) {
-    var aboutFormFromTop = $("#about").height() - 100;
-    $("#about-form").css("margin-top", aboutFormFromTop + "px");
-  }
-
 });
