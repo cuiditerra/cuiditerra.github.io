@@ -54,13 +54,7 @@ $(document).ready(function () {
   if (isMobile) {
     var aboutFormFromTop = $("#about").height() - 100;
     $("#about-form").css("margin-top", aboutFormFromTop + "px");
+    $("about").height($( window ).height());
   }
-  
-  // Fix "vh" on iOS
-  window.addEventListener("orientationchange", function () {
-    if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
-      document.documentElement.innerHTML = document.documentElement.innerHTML;
-    }
-  }, false);
 
 });

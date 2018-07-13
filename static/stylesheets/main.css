@@ -721,9 +721,6 @@
 
 
 @media (max-width: 600px) {
-  html,body{
-    margin: 0;
-  }
   body {
     font-family: 'Proxima Nova', Georgia, sans-serif;
   }
