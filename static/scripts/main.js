@@ -60,8 +60,8 @@ $(document).ready(function () {
     }
   };
   
-  calcHeight();
   if (!isMobile) {
+    calcHeight();
     $( window).resize(function() {
       calcHeight();
     });

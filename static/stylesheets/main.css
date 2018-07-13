@@ -409,6 +409,10 @@
     background: #ffffff;
     z-index: 100;
   }
+  
+  #alliance #alliance-mobile-image {
+    display: none;
+  }
 
   #alliance h2 {
     font-size: 72px;
