@@ -823,6 +823,7 @@
     overflow: hidden;
     background-image: url(/static/images/mobile_01_KV.png);
     background-size: cover;
+    position: relative;
   }
 
   #about #kv-left {
