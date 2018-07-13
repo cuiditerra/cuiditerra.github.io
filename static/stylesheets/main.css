@@ -500,6 +500,7 @@
     margin-top: 10px;
     position: absolute;
     top: 55px;
+    z-index: 1002;
   }
   
   #team #persons .person .team-left > div {
