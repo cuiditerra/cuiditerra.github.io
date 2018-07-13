@@ -24,7 +24,7 @@ $(document).ready(function () {
     });
   } else {
 
-    // Make nav fixed or hide 
+    // Make nav fixed or hide
     var scrollPos = 0;
 
     $(window).scroll(function () {
@@ -48,5 +48,11 @@ $(document).ready(function () {
 
   if (bodyWidth < 1600) {
     $("html, body").scrollLeft((1600 - bodyWidth) / 2)
+  }
+
+  // set about Form Top
+  if (isMobile) {
+    var aboutFormFromTop = $("#about").height() - 100;
+    $("#about-form").css("margin-top", aboutFormFromTop+"px");
   }
 });

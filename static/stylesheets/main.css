@@ -127,7 +127,7 @@
     padding-left: 24px;
     box-sizing: border-box;
   }
-  
+
   #about-form input::placeholder {
     font-family: Proxima Nova;
     color: #a3a3a3;
@@ -261,7 +261,7 @@
     width: 450px;
     display: inline-block;
   }
-  
+
   #contents-1 #mobile-icon-1 {
     display: none;
   }
@@ -271,7 +271,7 @@
   }
 
   #contents-2 img {
-   width: 98%; 
+   width: 98%;
   }
 
   #contents .contents-desc {
@@ -462,7 +462,7 @@
     background-color: #f2f2f2;
     height: 860px;
   }
-  
+
   #team #team-container {
     height: 860px;
     width: 1600px;
@@ -593,7 +593,7 @@
     transition: all .9s ease-in-out;
   }
 
-  .back-pos .team-left, 
+  .back-pos .team-left,
   .back-pos .team-right {
     opacity: .0;
   }
@@ -613,18 +613,18 @@
     height: 480px;
     position: relative;
   }
-  
+
   #investors {
     display: none;
   }
-  
+
   #investors #investors-container,
   #contact #contact-container {
     width: 900px;
     margin: auto;
     position: relative;
   }
-  
+
   #investors #investors-container > img, #contact #contact-container > img {
     position: absolute;
     top: 260px;
@@ -686,7 +686,7 @@
     margin: auto;
     margin-bottom: 160px;
   }
-  
+
   #footer-container {
     position: relative;
     margin: auto;
@@ -1001,11 +1001,11 @@
     position: relative;
     margin-bottom: 30px;
   }
-  
+
   #contents #contents-1 img {
     width: 60%;
   }
-  
+
   #contents-1 #desktop-icon-1 {
     display: none;
   }
@@ -1358,7 +1358,7 @@
     transition: all .9s ease-in-out;
   }
 
-  .back-pos .team-left, 
+  .back-pos .team-left,
   .back-pos .team-right {
     opacity: .0;
   }
@@ -1375,11 +1375,11 @@
   #investors, #contact {
     position: relative;
   }
-  
+
   #investors {
     display: none;
   }
-  
+
   #investors-container, #contact-container {
     width: 100vw;
     height: 195px;
