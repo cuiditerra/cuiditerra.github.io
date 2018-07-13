@@ -49,12 +49,4 @@ $(document).ready(function () {
   if (bodyWidth < 1600) {
     $("html, body").scrollLeft((1600 - bodyWidth) / 2)
   }
-  
-  // focus() to input without scrolling
-  $.fn.focusWithoutScrolling = function() {
-    var x = window.scrollX, y = window.scrollY;
-    this.focus();
-    window.scrollTo(x, y);
-  };
-  $('#about-form input').focusWithoutScrolling();
 });
