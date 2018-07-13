@@ -3,22 +3,27 @@ $(document).ready(function () {
   if (isMobile) {
     $("#menu-close").hide();
     $("header").hide();
-    
+
     $("#menu-hamberger").click(function () {
-      $("header").animate({ width: "toggle", right: "0px"}, function () {
+      $("header").animate({
+        width: "toggle",
+        right: "0px"
+      }, function () {
         $("#menu-hamberger").hide();
         $("#menu-close").show();
       });
     });
 
     $("#menu-close").click(function () {
-      $("header").animate({ width: "toggle" }, function () {
+      $("header").animate({
+        width: "toggle"
+      }, function () {
         $("#menu-close").hide();
         $("#menu-hamberger").show();
       });
     });
   } else {
-    
+
     // Make nav fixed or hide 
     var scrollPos = 0;
 
@@ -35,19 +40,27 @@ $(document).ready(function () {
       scrollPos = curScrollPos;
     });
   }
-  
+
   $('body').css("display", "block");
-  
+
   // scroll body to center
   var bodyWidth = $("html, body").width();
-  
-  if (bodyWidth < 1600) { 
-    $("html, body").scrollLeft((1600 - bodyWidth) / 2) 
+
+  if (bodyWidth < 1600) {
+    $("html, body").scrollLeft((1600 - bodyWidth) / 2)
   }
-  
+
   // set about-form for mobile
   if (isMobile) {
     var aboutFormFromTop = $("#about").height() - 100;
-    $("#about-form").css("margin-top", aboutFormFromTop+"px");
+    $("#about-form").css("margin-top", aboutFormFromTop + "px");
   }
+  
+  // Fix "vh" on iOS
+  window.addEventListener("orientationchange", function () {
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+      document.documentElement.innerHTML = document.documentElement.innerHTML;
+    }
+  }, false);
+
 });
