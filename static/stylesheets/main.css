@@ -81,7 +81,7 @@
     max-height: 100vh;
   }
 
-  #about, #product, #contents, #protocol, #apps, #alliance, #team, #investors-contact, footer {
+  #about, #product, #contents, #protocol, #apps, #alliance, #team, #investors-contact, footer, #apps {
     min-width: 1080px;
     width: 100vw;
     position: relative;
@@ -342,9 +342,9 @@
 
   #apps {
     margin: auto;
-    width: 1600px;
     height: 720px;
-    background: url(/static/images/product_img.png)
+    background: url(/static/images/product_img.png);
+    background-size: cover;
   }
 
   #apps #apps-logo {
@@ -378,11 +378,12 @@
   #apps-overlay {
     position: absolute;
     bottom: 0;
-    left: 200px;
-    width: 1200px;
+    left: 50%;
+    width: 1080px;
     height: 50px;
     z-index: 1001;
-    background: #ffffff
+    margin-left: -540px;
+    background: #ffffff;
   }
 
   #alliance {
