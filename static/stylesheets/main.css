@@ -86,24 +86,10 @@
     width: 100vw;
     position: relative;
   }
-
-  #about img {
-    position: absolute;
-  }
-
-  #kv-left {
-    left: 0;
-  }
-
-  #kv-right {
-    right: 0;
-    top: 160px;
-  }
-
-  #kv-logo {
-    left: 50%;
-    margin-left: -250px;
-    top: 320px;
+  
+  #about {
+    background-image: url(/static/images/web_kv.png);
+    background-size: cover;
   }
 
   #about-form img {
@@ -162,16 +148,7 @@
     margin-bottom: 80px;
     color: #2845ae;
   }
-
-  #about #about-desc {
-    top: 470px;
-    color: #2845ae;
-  }
-
-  #about #about-desc p {
-    display: inline-block;
-  }
-
+  
   #product {
     background: #383838;
     color: #5493f7;
@@ -261,6 +238,14 @@
     width: 450px;
     display: inline-block;
   }
+  
+  #contents-1 .image img {
+    padding-left: 20px;
+  }
+  
+  #contents-2 .image {
+    padding-left: 0px;
+  }
 
   #contents-1 #mobile-icon-1 {
     display: none;
@@ -271,7 +256,7 @@
   }
 
   #contents-2 img {
-   width: 98%;
+   width: 420px;
   }
 
   #contents .contents-desc {
@@ -497,6 +482,8 @@
     letter-spacing: 0px;
     color: #141414;
     font-family: proxima_nova_altbold;
+    position: absolute;
+    top: 0px;
   }
 
   #team .team-left p:nth-child(2) {
@@ -506,41 +493,16 @@
     font-stretch: normal;
     letter-spacing: 0px;
     color: #a2a2a2;
+    position: absolute;
+    top: 30px;
   }
-
-  #team #next, #team #prev {
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-  }
-
+  
   #team .team-left a img {
     margin-top: 10px;
-  }
-
-  #team .team-left p:nth-child(4) {
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    letter-spacing: 0px;
-    color: #a2a2a2;
-  }
-
-  #team #persons {
     position: absolute;
-    height: 510px;
-    width: 920px;
-    top: 210px;
-    left: 340px;
+    top: 55px;
   }
-
-  #team #persons .person {
-    height: 510px;
-    width: 920px;
-    position: absolute;
-    overflow: hidden;
-  }
-
+  
   #team #persons .person .team-left > div {
     font-size: 22px;
     font-weight: normal;
@@ -549,20 +511,49 @@
     letter-spacing: 0px;
     color: #666666;
     margin-top: 30px;
+    position: absolute;
+    top: 90px;
+  }
+
+  #team #next, #team #prev {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+  }
+
+  #team #persons {
+    position: absolute;
+    height: 600px;
+    width: 920px;
+    top: 210px;
+    left: 340px;
+  }
+
+  #team #persons .person {
+    height: 600px;
+    width: 920px;
+    position: absolute;
   }
 
   #team #persons .person .team-right {
     position: absolute;
-    width: 500px;
-    height: 385px;
-    left: 600px;
-    top: 75px;
+    width: 400px;
+    height: 450px;
     transition-delay: 0.1s;
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 100px;
+  }
+  
+  #team #persons .person .team-right img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
   }
 
   #team #pagination {
    position: absolute;
-   top: 710px;
+   top: 800px;
    right: 420px;
    z-index: 1000;
   }
@@ -824,14 +815,6 @@
     background-image: url(/static/images/mobile_01_KV.png);
     background-size: cover;
     position: relative;
-  }
-
-  #about #kv-left {
-    display: none;
-  }
-
-  #about #kv-right {
-    display: none;
   }
 
   #about #kv-logo {
@@ -1240,7 +1223,7 @@
 
   #team .team-left {
     position: absolute;
-    width: 315px;
+    width: 500px;
     height: 473px;
     top: 65px;
   }
@@ -1271,7 +1254,7 @@
 
   #team .team-left a {
     position: absolute;
-    top: 420px
+    top: 505px
   }
 
   #team .team-left p:nth-child(4) {
@@ -1285,14 +1268,14 @@
   #team #persons {
     position: relative;
     width: 315px;
-    height: 530px;
+    height: 600px;
     top: 130px;
     margin: auto;
   }
 
   #team #persons .person {
     width: 315px;
-    height: 530px;
+    height: 600px;
     position: absolute;
     overflow: hidden;
   }
@@ -1324,7 +1307,7 @@
 
   #team #pagination {
     position: absolute;
-    top: 620px;
+    top: 710px;
     right: 30px;
     width: 100px;
     z-index: 1000;
@@ -1349,6 +1332,10 @@
     -webkit-transition: all .9s ease-in-out;
     -moz-transition: all .9s ease-in-out;
     transition: all .9s ease-in-out;
+  }
+  
+  .main-pos a {
+    z-index: 1001;
   }
 
   .left-pos .team-left,
