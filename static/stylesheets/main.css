@@ -534,6 +534,7 @@
     height: 30px;
     width: 30px;
     display: inline-block;
+		cursor: pointer;
   }
 
   #team #persons {
@@ -1249,6 +1250,7 @@
     height: 30px;
     width: 30px;
     display: inline-block;
+		cursor: pointer;
   }
 
   #team .team-left a {
