@@ -1095,6 +1095,7 @@
     background: url(/static/images/mobile-product-bg@2x.png);
     background-size: cover;
     position: relative;
+		z-index: 100;
   }
 
   #apps #apps-logo {
@@ -1136,7 +1137,7 @@
 
   #alliance {
     width: 100vw;
-    height: 550px;
+    height: 580px;
     background: #ffffff;
     margin-top: -50px;
 		position: relative;
