@@ -828,7 +828,7 @@
     height: 100vh;
     overflow: hidden;
     background-image: url(/static/images/mobile_01_KV.png);
-    background-size: cover;
+    background-size: 100%;
     position: relative;
   }
 
