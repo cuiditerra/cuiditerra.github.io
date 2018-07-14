@@ -1155,6 +1155,7 @@
     height: 550px;
     background: #ffffff;
     margin-top: -50px;
+		position: relative;
   }
 
   #alliance #alliance-container {
@@ -1352,7 +1353,7 @@
   }
   
   .main-pos a {
-    z-index: 1001;
+    z-index: 1000;
   }
 
   .left-pos .team-left,
