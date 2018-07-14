@@ -843,27 +843,9 @@
     position: absolute;
   }
 
-  #about #about-desc {
-    text-align: center;
-    font-family: proxima_nova_altbold;
-    font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    line-height: 29px;
-    letter-spacing: 1px;
-    color: #2845ae;
-    position: absolute;
-    left: 50%;
-    margin-left: -90px;
-    top: 57%;
-  }
-
   #about #about-form {
-    bottom: 100px;
-    position: absolute;
     width: 290px;
-    left: 50%;
-    margin-left: -145px;
+    margin: 0 auto;
     font-family: proxima_nova_altbold;
   }
 
