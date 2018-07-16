@@ -745,7 +745,10 @@
     background: #2845ae;
     z-index: 1001;
   }
-
+  
+  .ui-loader {
+    display: none;
+  }
   header #desktop-logo {
     display: none;
   }
