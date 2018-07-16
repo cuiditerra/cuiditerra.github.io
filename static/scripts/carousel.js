@@ -101,10 +101,12 @@ $(document).ready(function () {
     $("#team #persons").on( "swipeleft", swipeleftHandler);
     function swipeleftHandler(event){
       swap('clockwise');
+      $('#pagination span').text(startItem + '/' + itemCount);
     }
     $("#team #persons").on( "swiperight", swiperightHandler);
     function swiperightHandler(event){
       swap('counter-clockwise');
+      $('#pagination span').text(startItem + '/' + itemCount);
     }
   }
 });
