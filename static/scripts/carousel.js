@@ -96,4 +96,15 @@ $(document).ready(function () {
       swap('clockwise');
     }
   });
+  
+  if (isMobile) {
+    $("#team #persons").on( "swipeleft", swipeleftHandler);
+    function swipeleftHandler(event){
+      swap('clockwise');
+    }
+    $("#team #persons").on( "swiperight", swiperightHandler);
+    function swiperightHandler(event){
+      swap('counter-clockwise');
+    }
+  }
 });

@@ -66,6 +66,6 @@ $(document).ready(function () {
       calcHeight();
     });
   } else {
-		$("#about #about-form").css("margin-top", $(window).height() - 120);
+      $("#about #about-form").css("margin-top", $(window).height() - 120);
 	}
 });
