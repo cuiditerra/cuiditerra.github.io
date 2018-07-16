@@ -409,10 +409,6 @@
     background: #ffffff;
     z-index: 100;
   }
-  
-  #alliance #alliance-mobile-image {
-    display: none;
-  }
 
   #alliance h2 {
     font-size: 72px;
@@ -451,10 +447,24 @@
     font-family: proxima_nova_altbold;
   }
 
-  #alliance img {
+  #alliance #alliance-images {
     left: 90px;
     top: 460px;
     position: absolute;
+  }
+  
+  #alliance #alliance-images img {
+    width: 120px;
+    height: 40px;
+    padding-right: 30px
+  }
+  
+  #alliance #alliance-images ul {
+    display: inline-block;
+  }
+  
+  #alliance #alliance-images li {
+    display: inline-block;
   }
 
   #team {
@@ -1193,15 +1203,22 @@
     font-family: proxima_nova_altbold;
   }
 
-  #alliance #alliance-desktop-image {
-    display: none;
+  #alliance #alliance-images img {
+    width: 90px;
+    height: 29px;
+    padding-right: 10px;
+    padding-bottom: 10px
   }
-  #alliance #alliance-mobile-image {
+  #alliance #alliance-images {
     left: 30px;
     top: 470px;
     position: absolute;
     width: 310px;
     height: 70px;
+  }
+  
+  #alliance #alliance-images li {
+    display: inline-block;
   }
 
   #team {
