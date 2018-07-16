@@ -15,7 +15,9 @@
     z-index: 2000;
   }
 
-  #mobile-logo, #menu-hamberger, #menu-close {
+  #mobile-logo,
+  #menu-hamberger,
+  #menu-close {
     display: none;
   }
 
@@ -75,16 +77,26 @@
     display: none;
   }
 
-  #about, #product, #contents, #protocol, #apps, #alliance, #team, #investors-contact, footer, #apps {
+  #about,
+  #product,
+  #contents,
+  #protocol,
+  #apps,
+  #alliance,
+  #team,
+  #investors-contact,
+  footer,
+  #apps {
     min-width: 1080px;
     width: 100vw;
     position: relative;
   }
-  
-  #about, #product {
+
+  #about,
+  #product {
     min-height: 600px;
   }
-  
+
   #about {
     background-image: url(/static/images/web_kv.png);
     background-repeat: no-repeat;
@@ -129,7 +141,7 @@
     padding-left: 30px;
     font-family: proxima_nova_altbold;
     letter-spacing: 0px;
-		border: 0;
+    border: 0;
   }
 
   #about div {
@@ -147,7 +159,7 @@
     margin-bottom: 130px;
     color: #2845ae;
   }
-  
+
   #product {
     color: #5493f7;
     background-image: url(/static/images/web_section_02_bg.png);
@@ -176,7 +188,7 @@
   #product #product-desc span {
     display: block;
   }
-  
+
   #product #product-container {
     width: 1080px;
     margin: auto;
@@ -235,22 +247,26 @@
     font-family: proxima_nova_altbold;
   }
 
-  #contents-1, #contents-2, #contents-3 {
+  #contents-1,
+  #contents-2,
+  #contents-3 {
     height: 580px;
     width: 910px;
     margin: auto;
   }
 
-  #contents-1 > div, #contents-2 > div, #contents-3 > div {
+  #contents-1 > div,
+  #contents-2 > div,
+  #contents-3 > div {
     float: left;
     width: 450px;
     display: inline-block;
   }
-  
+
   #contents-1 .image img {
     padding-left: 20px;
   }
-  
+
   #contents-2 .image {
     padding-left: 0px;
   }
@@ -264,7 +280,7 @@
   }
 
   #contents-2 img {
-   width: 420px;
+    width: 420px;
   }
 
   #contents .contents-desc {
@@ -280,7 +296,8 @@
     margin-bottom: 140px;
   }
 
-  #protocol #protocol-upper, #protocol #protocol-downer {
+  #protocol #protocol-upper,
+  #protocol #protocol-downer {
     background-color: #f2f2f2;
     width: 1080px;
     height: 680px;
@@ -452,17 +469,17 @@
     top: 460px;
     position: absolute;
   }
-  
+
   #alliance #alliance-images img {
     width: 120px;
     height: 40px;
     padding-right: 30px
   }
-  
+
   #alliance #alliance-images ul {
     display: inline-block;
   }
-  
+
   #alliance #alliance-images li {
     display: inline-block;
   }
@@ -520,14 +537,14 @@
     position: absolute;
     top: 30px;
   }
-  
+
   #team .team-left a img {
     margin-top: 10px;
     position: absolute;
     top: 55px;
     z-index: 1002;
   }
-  
+
   #team #persons .person .team-left > div {
     font-size: 22px;
     font-weight: normal;
@@ -540,11 +557,12 @@
     top: 90px;
   }
 
-  #team #next, #team #prev {
+  #team #next,
+  #team #prev {
     height: 30px;
     width: 30px;
     display: inline-block;
-		cursor: pointer;
+    cursor: pointer;
   }
 
   #team #persons {
@@ -570,7 +588,7 @@
     right: 0px;
     margin-bottom: 100px;
   }
-  
+
   #team #persons .person .team-right img {
     position: absolute;
     right: 0px;
@@ -578,10 +596,10 @@
   }
 
   #team #pagination {
-   position: absolute;
-   top: 800px;
-   right: 70px;
-   z-index: 1000;
+    position: absolute;
+    top: 800px;
+    right: 70px;
+    z-index: 1000;
   }
 
   #pagination span {
@@ -616,7 +634,7 @@
   }
 
   .right-pos .team-left,
-  .right-pos .team-right{
+  .right-pos .team-right {
     margin-left: 100px;
     opacity: .0;
     -webkit-transition: all .9s ease-in-out;
@@ -624,7 +642,8 @@
     transition: all .9s ease-in-out;
   }
 
-  #investors, #contact {
+  #investors,
+  #contact {
     margin: auto;
     width: 1080px;
     height: 480px;
@@ -642,7 +661,8 @@
     position: relative;
   }
 
-  #investors #investors-container > img, #contact #contact-container > img {
+  #investors #investors-container > img,
+  #contact #contact-container > img {
     position: absolute;
     top: 260px;
   }
@@ -652,7 +672,8 @@
     margin-top: 140px;
   }
 
-  #investors h1, #contact h1 {
+  #investors h1,
+  #contact h1 {
     font-size: 72px;
     font-weight: normal;
     font-stretch: normal;
@@ -671,7 +692,7 @@
     display: none;
   }
 
-  #contact #contact-container >  div {
+  #contact #contact-container > div {
     position: absolute;
     line-height: 45px;
     top: 80px
@@ -755,7 +776,7 @@
     background: #2845ae;
     z-index: 1001;
   }
-  
+
   .ui-loader {
     display: none;
   }
@@ -843,7 +864,7 @@
     overflow: hidden;
     background-image: url(/static/images/mobile_01_KV.png);
     background-size: 100% 100%;
-		background-repeat: no-repeat;
+    background-repeat: no-repeat;
     position: relative;
   }
 
@@ -898,7 +919,7 @@
     font-stretch: normal;
     letter-spacing: 1px;
     color: #ffffff;
-		border: 0;
+    border: 0;
   }
 
   #product {
@@ -1108,7 +1129,7 @@
     background: url(/static/images/mobile-product-bg@2x.png);
     background-size: cover;
     position: relative;
-		z-index: 100;
+    z-index: 100;
   }
 
   #apps #apps-logo {
@@ -1215,7 +1236,7 @@
     width: 310px;
     height: 70px;
   }
-  
+
   #alliance #alliance-images li {
     display: inline-block;
   }
@@ -1266,11 +1287,12 @@
     color: #a2a2a2;
   }
 
-  #team #next, #team #prev {
+  #team #next,
+  #team #prev {
     height: 30px;
     width: 30px;
     display: inline-block;
-		cursor: pointer;
+    cursor: pointer;
   }
 
   #team .team-left a {
@@ -1356,7 +1378,7 @@
     -moz-transition: all .9s ease-in-out;
     transition: all .9s ease-in-out;
   }
-  
+
   .main-pos a {
     z-index: 1000;
   }
@@ -1376,7 +1398,7 @@
   }
 
   .right-pos .team-left,
-  .right-pos .team-right{
+  .right-pos .team-right {
     margin-left: 100px;
     opacity: .0;
     -webkit-transition: all .9s ease-in-out;
@@ -1384,7 +1406,8 @@
     transition: all .9s ease-in-out;
   }
 
-  #investors, #contact {
+  #investors,
+  #contact {
     position: relative;
   }
 
@@ -1392,13 +1415,15 @@
     display: none;
   }
 
-  #investors-container, #contact-container {
+  #investors-container,
+  #contact-container {
     width: 100vw;
     height: 195px;
     position: relative;
   }
 
-  #investors #investors-container h1, #contact #contact-container h1 {
+  #investors #investors-container h1,
+  #contact #contact-container h1 {
     font-family: proxima_nova_altbold;
     font-size: 41px;
     font-weight: normal;
