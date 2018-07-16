@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  isMobile = $('html, body').width() < 600 ? true : false;
+  bodyWidth = $('html, body').width();
+  isMobile = bodyWidth < 600 ? true : false;
   if (isMobile) {
     $("#menu-close").hide();
     $("header").hide();
@@ -49,23 +50,34 @@ $(document).ready(function () {
   if (bodyWidth < 1600) {
     $("html, body").scrollLeft((1600 - bodyWidth) / 2)
   }
-  
+
   // 
-  
+
   function calcHeight() {
-    if ($('html, body').width() <= 1080) {
+    if (bodyWidth <= 1080) {
       $('#about, #product').height(607.5);
     } else {
-      $('#about, #product').height($('html, body').width() / 1.77777 )
+      $('#about, #product').height(bodyWidth / 1.77777)
     }
   };
-  
-  if (!isMobile) {
+
+  if (!isMobile) { // desktop
     calcHeight();
-    $( window).resize(function() {
+    $(window).resize(function () {
       calcHeight();
     });
-  } else {
-      $("#about #about-form").css("margin-top", $(window).height() - 120);
-	}
+  } else { // mobile
+    $("#about #about-form").css("margin-top", $(window).height() - 120);
+    
+    
+    // default mobile size is 375 * 667( iPhone 6/7/8)  
+    var newWidth = bodyWidth * 210 / 375;
+    var newHeight = 164 * newWidth / 210;
+    $("#about #about-image").css({
+      width: newWidth,
+      height: newHeight,
+      "margin-left": - newWidth * 0.5,
+      "margin-top": - newHeight * 0.5
+    });
+  }
 });

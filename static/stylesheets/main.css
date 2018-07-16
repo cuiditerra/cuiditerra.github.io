@@ -102,6 +102,10 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  
+  #about #about-image {
+    display: none;
+  }
 
   #about-form img {
     position: absolute;
@@ -868,13 +872,13 @@
     position: relative;
   }
 
-  #about #kv-logo {
+  #about #about-image {
     width: 210px;
-    height: 60px;
+    height: 164px;
     left: 50%;
     margin-left: -105px;
     top: 50%;
-    margin-top: -30px;
+    margin-top: -82px;
     position: absolute;
   }
 
